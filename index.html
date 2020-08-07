@@ -771,6 +771,9 @@
 
       new TypeIt('#app', {
         strings: ["Full Stack Web Developer", "Back-End Developer"],
+         afterStep: function(step, instance) {
+          instance.getElement().style.color = getRandomColor();
+        },
         speed: 100,
         breakLines: false,
         waitUntilVisible: true,
